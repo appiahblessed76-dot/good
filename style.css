@@ -1,0 +1,255 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(30, 60, 114, 0.7), rgba(42, 82, 152, 0.7)),
+              url("image/1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  height: 75px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #00ffcc;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu ul li {
+  margin: 0 15px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.menu ul li a:hover {
+  color: #00ffcc;
+}
+
+.search {
+  display: flex;
+  margin-top: 10px;
+}
+
+.srch {
+  width: 200px;
+  height: 35px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  max-width: 100%;
+}
+
+.btn {
+  width: 60px;
+  height: 35px;
+  border: none;
+  background: #00ffcc;
+  color: black;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  color: white;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.content span {
+  color: #00ffcc;
+}
+
+.content .par {
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.content .cn {
+  margin-top: 25px;
+  background: #00ffcc;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.content .cn a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.cn:hover {
+  background: white;
+}
+
+.form {
+  width: 100%;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 15px;
+  position: absolute;
+  right: 20px;
+  top: 50px;
+}
+
+.form h2 {
+  text-align: center;
+  color: #00ffcc;
+  margin-bottom: 20px;
+}
+
+.form input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 15px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btnn {
+  width: 100%;
+  height: 40px;
+  background: #00ffcc;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btnn:hover {
+  background: white;
+  color: #00ffcc;
+}
+
+.link {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.link a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+.liw {
+  text-align: center;
+  margin: 15px 0 10px;
+  font-size: 14px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+.icons a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: white;
+  transition: 0.3s;
+}
+
+.icons a:hover {
+  color: #00ffcc;
+}
+
+/* 🔹 RESPONSIVE FIXES */
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  .menu ul {
+    margin-top: 10px;
+  }
+
+  .form {
+    position: static;
+    margin: 30px auto 0;
+  }
+
+  .content {
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .content h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .srch {
+    width: 150px;
+  }
+
+  .menu ul li {
+    margin: 5px 10px;
+  }
+
+  .content .par {
+    font-size: 0.9rem;
+  }
+
+  .form {
+    width: 90%;
+  }
+}
